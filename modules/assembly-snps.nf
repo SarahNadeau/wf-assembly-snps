@@ -125,7 +125,8 @@ process PAIRWISE_DISTANCES {
 
     params.enable_conda_yml ? "$baseDir/conda/linux/NEEDS-NEWFILE.yml" : null
     // conda 'bioconda::FIXME'
-    container "snads/hamming-dist:1.0"
+    // container "snads/hamming-dist:1.0"
+    container "snads/hamming-dist:perl"
 
     input:
         path(snps_file)
